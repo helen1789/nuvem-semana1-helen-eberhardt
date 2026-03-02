@@ -19,6 +19,7 @@ apiEl.textContent = JSON.stringify(data, null, 2);
 } catch (err) {
 apiEl.textContent = "Erro no fetch: " + err.message;
 }
+});
 
 const out = document.getElementById("out");
 const btnGet = document.getElementById("btnGet");
@@ -67,5 +68,3 @@ show("Erro no POST: " + err.message);
 }
 btnGet.addEventListener("click", httpGetWeather);
 btnPost.addEventListener("click", httpPostSimulado);
-  
-});
